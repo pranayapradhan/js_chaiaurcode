@@ -13,4 +13,4 @@ let accountAmount;
 
 console.log(accountId);
 
-console.table([accountId,accountEmail,accountPassword,accountAmount])
+console.table([accountId,accountEmail,accountPassword,accountCity,accountAmount])
