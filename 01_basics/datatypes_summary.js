@@ -15,10 +15,10 @@ let userEmail = undefined // undefined
 const userId = Symbol("123") //Symbol
 const anotherId = Symbol("123") //Symbol
 
-console.log(userId == anotherId);
+// console.log(userId == anotherId);
 
 let bigNumber = 12345678900987654321n  // bigint
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 
 // Reference (Non Primitive)
@@ -34,10 +34,39 @@ const myObj = {
 }
 
 const myFunc = function(){
-    console.log("Pranaya Pradhan Sainju");
+    // console.log("Pranaya Pradhan Sainju");
     
 }
 
-console.log(typeof(names)); // object
-console.log(typeof(myObj)); // object
-console.log(typeof(myFunc)); // function
+// console.log(typeof(names)); // object
+// console.log(typeof(myObj)); // object
+// console.log(typeof(myFunc)); // function
+
+
+
+
+// ***********************************************
+
+// Stack (Primitive) and Heap (Non Primitive)
+
+let myBook = "Pranaya"
+
+let anotherBook = myBook // Stack provides copy of the variable
+anotherBook = "Pradhan" 
+
+console.log(myBook);
+console.log(anotherBook);
+
+let userOne = {
+    email : "pranaya@yahoo.com",
+    address: "kathmandu"
+}
+
+let userTwo = userOne 
+console.log(userOne.email);
+
+// Heap provides reference of the same variable so data is changed in both object.
+
+userTwo.email = "pradhan@google.com"
+console.log(userTwo.email);
+console.log(userOne.email);
