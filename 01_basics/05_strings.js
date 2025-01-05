@@ -5,7 +5,9 @@ const value = 10
 
 console.log(`Name is ${name} and value is ${value}`); // It's better to follow this concept rather than the upper one 
 
-const objGame = new String("PranayaGamesDotCom")
+const objGame = new String("PranayaGamesDotCom") //Creating String in object
+console.log(typeof(objGame));
+
 
 const gameName = "pranaya-hc-com"
 
