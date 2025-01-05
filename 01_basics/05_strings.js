@@ -39,6 +39,8 @@ console.log(url.split("/"));
 
 
 
+
+
 // reverse a string 
 
 const nameOne = "Pranaya"
